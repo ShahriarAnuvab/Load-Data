@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Datas</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <h1 class=" text-5xl lg:text-7xl font-extrabold text-center uppercase mt-5">Load Data</h1>
+    </header>
+    <main class="container mx-auto">
+        <section class="flex justify-center items-center gap-6 mt-10">
+            <button class="btn btn-info text-black" onclick="loadData()" >Load Name</button>
+            <button class="btn btn-success" onclick="loadData2()">User Name </button>
+        </section>
+        <section class="flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
+            <div id="userName" class="bg-slate-500 text-white gap-1 rounded-xl">
+                
+
+            </div>
+            <div id="userUserName"class="bg-slate-500 text-white gap-1  rounded-xl" >
+
+            </div>
+        </section>
+        <section class="grid justify-items-center" >
+            <div>
+                <button class="btn btn-warning" onclick="loadPostsData()">show post</button>
+            </div>
+            <div class="p-5 md:p-1 my-5" id="postContainer">
+                <!-- <div class="card card-compact  bg-base-100 shadow-2xl">
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>id</p>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+   
+                    </div>
+                  </div> -->
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
